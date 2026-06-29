@@ -1,0 +1,28 @@
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[build-system]
+requires = ["setuptools>=80.9.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "plodwave"
+version = "0.1.0"
+authors = [
+  { name="Felix Krumbiegel", email="felix.krumbiegel@kit.edu" },
+]
+description = "Higher-Order LOD for acoustic waves"
+readme = "README.md"
+license-files = ["LICENSE"]
+requires-python = ">=3.12"
+dependencies = [
+  "matplotlib>=3.10.5",
+  "numpy>=2.3.2",
+  "PyQt6>=6.9.1",
+  "scipy>=1.16.1",
+  "pytest>=8.4.1",
+  "setuptools>=80.9.0",
+  "pyamg>=5.2.1",
+  "scikit-sparse==0.4.16",
+  "scikit-umfpack>=0.4.2",
+]
